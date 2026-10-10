@@ -1,0 +1,35 @@
+{
+  "permission": "User confirmed ownership or permission to republish on October 9, 2026.",
+  "collection": "https://www.retrometrookc.org/collections/bricktown-collection/photos/",
+  "photos": [
+    {
+      "file": "jim-brett-brent-canal-1999.jpg",
+      "source_id": 20845,
+      "date": "circa 1999"
+    },
+    {
+      "file": "bricktown-festival-1988.jpg",
+      "caption": "A packed Bricktown festival; two archive entries assign conflicting dates. Year unconfirmed.",
+      "date": "Unconfirmed",
+      "source_id": 22049
+    },
+    {
+      "file": "bricktown-fourth-of-july-stage.jpg",
+      "caption": "A festival-stage moment outside O\u2019Brien\u2019s, beneath a Bricktown Fourth of July banner. The exact year is not established.",
+      "date": "Fourth of July \u00b7 Year unconfirmed",
+      "source_id": 22085
+    },
+    {
+      "file": "obriens-exterior.jpg",
+      "caption": "O\u2019Brien\u2019s Bricktown Club on a summer day. The pub and its streetfront became part of the family\u2019s entertainment story.",
+      "date": "O\u2019Brien\u2019s \u00b7 Year unconfirmed",
+      "source_id": 22083
+    },
+    {
+      "file": "bricktown-fourth-of-july-presentation.jpg",
+      "caption": "An onstage presentation during a Bricktown Fourth of July celebration, with O\u2019Brien\u2019s in the background.",
+      "date": "Fourth of July \u00b7 Year unconfirmed",
+      "source_id": 22084
+    }
+  ]
+}
