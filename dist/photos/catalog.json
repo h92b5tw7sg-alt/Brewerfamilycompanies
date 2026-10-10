@@ -3,33 +3,43 @@
   "collection": "https://www.retrometrookc.org/collections/bricktown-collection/photos/",
   "photos": [
     {
-      "file": "jim-brett-brent-canal-1999.jpg",
+      "file": "jim-brett-brent-canal-1999-colorized.png",
       "source_id": 20845,
-      "date": "circa 1999"
+      "date": "circa 1999",
+      "original_file": "jim-brett-brent-canal-1999.jpg",
+      "treatment": "AI colorized; colors are estimates, not a historical color record."
     },
     {
-      "file": "bricktown-festival-1988.jpg",
+      "file": "bricktown-festival-1988-colorized.png",
       "caption": "A packed Bricktown festival; two archive entries assign conflicting dates. Year unconfirmed.",
       "date": "Unconfirmed",
-      "source_id": 22049
+      "source_id": 22049,
+      "original_file": "bricktown-festival-1988.jpg",
+      "treatment": "AI colorized; colors are estimates, not a historical color record."
     },
     {
-      "file": "bricktown-fourth-of-july-stage.jpg",
+      "file": "bricktown-fourth-of-july-stage-colorized.png",
       "caption": "A festival-stage moment outside O\u2019Brien\u2019s, beneath a Bricktown Fourth of July banner. The exact year is not established.",
       "date": "Fourth of July \u00b7 Year unconfirmed",
-      "source_id": 22085
+      "source_id": 22085,
+      "original_file": "bricktown-fourth-of-july-stage.jpg",
+      "treatment": "AI colorized; colors are estimates, not a historical color record."
     },
     {
-      "file": "obriens-exterior.jpg",
-      "caption": "O\u2019Brien\u2019s Bricktown Club on a summer day. The pub and its streetfront became part of the family\u2019s entertainment story.",
-      "date": "O\u2019Brien\u2019s \u00b7 Year unconfirmed",
-      "source_id": 22083
+      "file": "obriens-exterior-colorized.png",
+      "caption": "An archival Bricktown streetfront with Roberts the Jeweler on the awning. The exact year is unconfirmed.",
+      "date": "Bricktown streetfront \u00b7 Year unconfirmed",
+      "source_id": 22083,
+      "original_file": "obriens-exterior.jpg",
+      "treatment": "AI colorized; colors are estimates, not a historical color record."
     },
     {
-      "file": "bricktown-fourth-of-july-presentation.jpg",
+      "file": "bricktown-fourth-of-july-presentation-colorized.png",
       "caption": "An onstage presentation during a Bricktown Fourth of July celebration, with O\u2019Brien\u2019s in the background.",
       "date": "Fourth of July \u00b7 Year unconfirmed",
-      "source_id": 22084
+      "source_id": 22084,
+      "original_file": "bricktown-fourth-of-july-presentation.jpg",
+      "treatment": "AI colorized; colors are estimates, not a historical color record."
     }
   ]
 }
