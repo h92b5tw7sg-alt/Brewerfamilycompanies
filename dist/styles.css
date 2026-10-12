@@ -64,3 +64,6 @@ body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 
 /* Warehouse-sign lettering with a Bricktown brick course. */
 .brand .bricktown-logo{display:block;width:224px;height:auto;flex:none}.header .brand{flex-shrink:0}.header{gap:24px}footer .bricktown-logo{width:224px}@media(max-width:1100px){.brand .bricktown-logo{width:200px}.header nav{gap:9px;font-size:12px}}@media(max-width:760px){.header{flex-wrap:wrap}.header nav{width:100%;justify-content:space-between}.brand .bricktown-logo{width:210px}}@media(max-width:600px){.brand .bricktown-logo{width:196px}.header nav{gap:2px;font-size:10px}.header nav a{padding:8px 7px}footer .bricktown-logo{width:224px}}
+
+/* Preserve the complete historical prints, including Jim’s portrait and archive border. */
+.memory-original>a{background:#101010}.memory-original img{aspect-ratio:1.5;object-fit:contain}.memory-original>a:hover img{transform:none}

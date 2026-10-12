@@ -1,7 +1,25 @@
 {
-  "permission": "User confirmed ownership or permission to republish on October 9, 2026.",
+  "permission": "User confirmed ownership or permission for the Retro Metro Brewer family archive photos on October 9, 2026. Other source credits are recorded per image; they are not part of that confirmation.",
   "collection": "https://www.retrometrookc.org/collections/bricktown-collection/photos/",
   "photos": [
+    {
+      "file": "jim-brewer-obriens-1990.jpg",
+      "date": "1990-11-13",
+      "photographer": "David McDaniel",
+      "archive": "Oklahoma Historical Society",
+      "archive_identifier": "2012.201.B0105.0413",
+      "source_page": "https://welcometobricktown.com/the-official-bricktown-history-blog/",
+      "source_image": "https://welcometobricktown.com/wp-content/uploads/2026/01/metadc238089_xl_2012.201.B0105.0413-1.jpg",
+      "treatment": "Original color photograph; unaltered"
+    },
+    {
+      "file": "bricktown-canal-opening-1999.jpg",
+      "date": "July 1999",
+      "credit": "The Oklahoman, as credited by Bricktown OKC",
+      "source_page": "https://welcometobricktown.com/the-official-bricktown-history-blog/",
+      "source_image": "https://welcometobricktown.com/wp-content/uploads/2026/01/Prep-Opening_photo_1.jpg",
+      "treatment": "Original color photograph; unaltered"
+    },
     {
       "file": "jim-brett-brent-canal-1999-colorized.png",
       "source_id": 20845,
