@@ -75,3 +75,6 @@ body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .timeline-intro{max-width:800px;color:#c0b9c6;margin:20px 0 35px}.timeline-era{font-size:11px;font-weight:600;letter-spacing:2px;color:#ff989e;padding:28px 0 15px}.timeline-era:first-child{padding-top:0}.timeline-source{color:#ff989e;font-size:11px;text-underline-offset:3px;white-space:normal}.timeline-memory{margin-top:14px!important;padding-left:15px;border-left:2px solid rgba(239,48,43,.65);color:#e3c4c8!important;font-size:13px!important}.timeline .year,.timeline article:last-child .year{font-size:44px}@media(max-width:600px){.timeline .year,.timeline article:last-child .year{font-size:29px}.timeline-era{letter-spacing:1.3px}}
 
 .timeline-early-note{max-width:780px;font-size:12px;line-height:1.8;color:#bfb7c5;margin:0 0 22px}.timeline .year.year-range{font-size:23px;line-height:1.35;overflow-wrap:normal}@media(max-width:600px){.timeline .year.year-range{font-size:18px;line-height:1.4}}
+
+/* Chapter dividers occupy a complete grid row; odd chapters finish with a full-width milestone. */
+.timeline>.timeline-era,.timeline>.timeline-early-note,.timeline>article.timeline-wide{grid-column:1 / -1}
