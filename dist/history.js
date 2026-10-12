@@ -55,3 +55,5 @@ archiveMore.addEventListener('click', () => {
   if (next) next.querySelector('a').focus({ preventScroll: false });
 });
 renderArchive();
+
+document.querySelectorAll("[data-show-lackmeyer]").forEach(link => link.addEventListener("click", () => { archiveSearch.value = ""; document.querySelector("[data-archive-filter=lackmeyer]").click(); }));

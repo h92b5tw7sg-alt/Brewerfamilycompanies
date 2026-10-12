@@ -1,0 +1,3 @@
+# Steve Lackmeyer Brewer / Bricktown index
+
+Research: October 11, 2026. Reviewed all 14 available pages of Google results for site:oklahoman.com "Steve Lackmeyer" "Brewer". Found 137 unique search results; added 101 relevant indexed references. Excluded unrelated Brewers, generic brewing businesses, uncertain family connections, duplicate versions and reports whose byline was not established. This is not a complete inventory of the newspaper archive or Lackmeyer’s career. Full publisher pages were not accessible; new references explicitly mark that limit. Raw search evidence is preserved in lackmeyer-search-index.json.

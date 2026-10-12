@@ -67,3 +67,5 @@ body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 
 /* Preserve the complete historical prints, including Jim’s portrait and archive border. */
 .memory-original>a{background:#101010}.memory-original img{aspect-ratio:1.5;object-fit:contain}.memory-original>a:hover img{transform:none}
+
+.lackmeyer-feature{margin:20px 0 35px;padding:40px;border:1px solid rgba(255,255,255,.17);border-radius:26px;background:linear-gradient(135deg,rgba(155,26,33,.19),rgba(255,255,255,.035))}.lackmeyer-feature h3{font:500 clamp(28px,3vw,43px)/1.2 Georgia,serif;letter-spacing:-.5px;margin:18px 0}.lackmeyer-feature>p{max-width:850px;color:#c8c0cc}.lackmeyer-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:28px 0}.lackmeyer-links a{display:block;padding:16px 20px;border-radius:14px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.045);font-size:14px;color:#ffb2b7;text-decoration:none}.lackmeyer-links a:hover{background:rgba(239,48,43,.14)}@media(max-width:600px){.lackmeyer-feature{padding:25px}.lackmeyer-links{grid-template-columns:1fr}.archive-filters{flex-wrap:wrap}}
