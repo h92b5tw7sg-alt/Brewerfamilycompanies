@@ -78,3 +78,22 @@ body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 
 /* Chapter dividers occupy a complete grid row; odd chapters finish with a full-width milestone. */
 .timeline>.timeline-era,.timeline>.timeline-early-note,.timeline>article.timeline-wide{grid-column:1 / -1}
+/* Haunted Warehouse tie-in (static; not replaced by database content) */
+.haunt-section{background:radial-gradient(ellipse at 80% 20%,rgba(155,26,33,.28),transparent 60%),#0b0b0c;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.haunt-feature{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:start}
+.haunt-logo{display:block;max-width:440px;margin-bottom:22px;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.haunt-logo img{display:block;width:100%;height:auto}
+.haunt-copy h2{margin:14px 0 18px}
+.haunt-copy p{color:#d2cbd4}
+.haunt-copy blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid var(--red);background:rgba(255,255,255,.04);border-radius:0 14px 14px 0;font:italic 500 clamp(18px,1.7vw,23px)/1.45 Georgia,serif;color:#fff}
+.haunt-copy blockquote cite{display:block;margin-top:10px;font-style:normal;font-family:inherit;font-size:12px;line-height:1.4;font-family:system-ui,sans-serif;letter-spacing:1px;color:#aaa3b0}
+.haunt-links{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}
+.haunt-links a:not(.button){padding:12px 18px;border-radius:40px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.045);font-size:14px;color:#ffb2b7;text-decoration:none}
+.haunt-links a:not(.button):hover{background:rgba(239,48,43,.14)}
+.haunt-links .button{grid-column:auto;grid-row:auto}
+.haunt-media{display:grid;gap:18px}
+.haunt-media figure{margin:0}
+.haunt-media img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.haunt-media figcaption{margin-top:10px;font-size:13px;color:#c8c0cc;display:flex;gap:10px;align-items:baseline}
+@media(max-width:1100px){.haunt-feature{grid-template-columns:1fr;gap:40px}.haunt-media{grid-template-columns:1fr 1fr;align-items:start}}
+@media(max-width:600px){.haunt-media{grid-template-columns:1fr}.haunt-logo{max-width:100%}}
