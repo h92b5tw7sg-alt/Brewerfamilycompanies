@@ -2,7 +2,8 @@
 // Business records are never stored in this site's files. They load from a private
 // Supabase project only after sign-in, and row-level security returns rows only to
 // approved members. The key below is the browser-safe publishable key.
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+// Pinned to an exact release so a new upstream publish can't change this private page.
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.1/+esm';
 
 const SUPABASE_URL = 'https://ligjdeagnirrnaoixpue.supabase.co';
 const SUPABASE_KEY = 'sb_publishable__brtUpVtwgA8BjSCxUEZTg_3WKqKLrl';
@@ -50,10 +51,11 @@ form.addEventListener('submit', async e => {
   form.querySelector('button').disabled = true;
   const { error } = await supabase.auth.signInWithOtp({
     email,
-    options: { emailRedirectTo: location.origin + location.pathname }
+    options: { emailRedirectTo: location.origin + location.pathname, shouldCreateUser: false }
   });
   form.querySelector('button').disabled = false;
-  msg(error ? 'Could not send the link: ' + error.message : 'Check ' + email + ' for your sign-in link. You can close this tab.');
+  // Same message either way, so the form never reveals which emails are approved.
+  msg('If ' + email + ' is approved, a sign-in link is on its way. You can close this tab.');
 });
 
 signOutBtn.addEventListener('click', async () => {
