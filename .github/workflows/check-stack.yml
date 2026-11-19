@@ -1,0 +1,27 @@
+name: Check website and database
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: python3 scripts/build-seed.py
+      - run: git diff --exit-code -- supabase/seed.sql
+      - run: npx --no-install supabase start
+      - run: npm run db:reset
+      - name: Verify public and editor access
+        run: psql postgresql://postgres:postgres@127.0.0.1:54322/postgres -v ON_ERROR_STOP=1 -f supabase/tests/access.sql
+      - if: always()
+        run: npx --no-install supabase stop

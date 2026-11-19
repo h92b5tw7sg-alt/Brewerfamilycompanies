@@ -1,5 +1,5 @@
 const buttons = [...document.querySelectorAll('[data-filter]')];
-const stories = [...document.querySelectorAll('[data-category]')];
+let stories = [...document.querySelectorAll('[data-category]')];
 buttons.forEach(button => button.addEventListener('click', () => {
   buttons.forEach(item => {const selected = item === button; item.classList.toggle('active', selected); item.setAttribute('aria-pressed', String(selected));});
   let count = 0;
@@ -7,13 +7,13 @@ buttons.forEach(button => button.addEventListener('click', () => {
   document.getElementById('story-count').textContent = `${count} stories`;
 }));
 
-const archiveCards = [...document.querySelectorAll('.press-card')];
+let archiveCards = [...document.querySelectorAll('.press-card')];
 const archiveButtons = [...document.querySelectorAll('[data-archive-filter]')];
 const archiveSearch = document.getElementById('archive-search');
 const archiveSort = document.getElementById('archive-sort');
 const archiveMore = document.getElementById('archive-more');
 const normalize = value => value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[’‘]/g, "'");
-const archiveText = new Map(archiveCards.map(card => [card, normalize(card.textContent)]));
+let archiveText = new Map(archiveCards.map(card => [card, normalize(card.textContent)]));
 let archiveFilter = 'all';
 let archiveLimit = 12;
 function renderArchive() {
@@ -57,3 +57,12 @@ archiveMore.addEventListener('click', () => {
 renderArchive();
 
 document.querySelectorAll("[data-show-lackmeyer]").forEach(link => link.addEventListener("click", () => { archiveSearch.value = ""; document.querySelector("[data-archive-filter=lackmeyer]").click(); }));
+
+// Refresh data behind the existing controls after the public database loads.
+document.addEventListener('bfc:content', () => {
+  stories = [...document.querySelectorAll('.story-grid [data-category]')];
+  archiveCards = [...document.querySelectorAll('.press-card')];
+  archiveText = new Map(archiveCards.map(card => [card, normalize(card.textContent)]));
+  document.querySelector('[data-filter].active')?.click();
+  renderArchive();
+});
