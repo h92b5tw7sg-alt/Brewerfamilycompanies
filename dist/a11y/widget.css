@@ -1,0 +1,28 @@
+/* Brewer accessibility menu styles (loaded by widget.js) */
+.ba11y-btn{position:fixed;bottom:20px;z-index:2147483000;width:52px;height:52px;border-radius:50%;border:2px solid #fff;background:var(--ba11y-color);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);padding:0;transition:transform .2s}
+.ba11y-btn:hover{transform:scale(1.06)}
+.ba11y-btn:focus-visible,.ba11y-panel button:focus-visible,.ba11y-panel a:focus-visible{outline:3px solid #ffd23f;outline-offset:3px}
+.ba11y-btn svg{width:28px;height:28px}
+.ba11y-panel{position:fixed;bottom:84px;z-index:2147483000;width:min(320px,calc(100vw - 40px));max-height:calc(100vh - 110px);overflow:auto;background:#fff;color:#111;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.4);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding:16px}
+.ba11y-panel[hidden]{display:none}
+.ba11y-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 12px}
+.ba11y-head h2{margin:0;font:700 17px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#111;letter-spacing:0;text-transform:none}
+.ba11y-x{border:0;background:#f1f1f1;color:#111;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:18px;line-height:1}
+.ba11y-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ba11y-opt{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-height:64px;padding:10px 12px;border-radius:12px;border:2px solid #d9d9d9;background:#fafafa;color:#111;font:600 14px/1.25 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;text-align:left;cursor:pointer}
+.ba11y-opt small{font-weight:500;font-size:12px;color:#555}
+.ba11y-opt[aria-pressed=true]{border-color:var(--ba11y-color);background:#eef4ff;color:#000}
+.ba11y-opt[aria-pressed=true] small{color:#222}
+.ba11y-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+.ba11y-reset{border:2px solid #111;background:#fff;color:#111;border-radius:30px;padding:8px 14px;font:600 13px/1 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;cursor:pointer}
+.ba11y-foot a{color:#0645ad;font-size:13px;text-decoration:underline}
+html.ba11y-text-1 body{zoom:1.12}html.ba11y-text-2 body{zoom:1.25}html.ba11y-text-3 body{zoom:1.4}
+html.ba11y-contrast body>*:not(.ba11y-btn):not(.ba11y-panel){filter:contrast(1.35) saturate(1.1)}
+html.ba11y-links a:not(.ba11y-panel a){text-decoration:underline !important;text-underline-offset:3px}
+html.ba11y-font body,html.ba11y-font body *:not(svg):not(svg *){font-family:Verdana,Tahoma,"Segoe UI",Arial,sans-serif !important;letter-spacing:.03em !important;word-spacing:.08em !important}
+html.ba11y-spacing body p,html.ba11y-spacing body li,html.ba11y-spacing body dd{line-height:1.9 !important}
+html.ba11y-motion *,html.ba11y-motion *::before,html.ba11y-motion *::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+html.ba11y-cursor,html.ba11y-cursor *{cursor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2740%27 height=%2740%27 viewBox=%270 0 24 24%27%3E%3Cpath d=%27M4 2l16 9-7 1.6L9.6 20z%27 fill=%27%23000%27 stroke=%27%23fff%27 stroke-width=%271.5%27/%3E%3C/svg%3E") 4 2,auto !important}
+html.ba11y-left .ba11y-btn,html.ba11y-left .ba11y-panel{left:20px}
+html.ba11y-right .ba11y-btn,html.ba11y-right .ba11y-panel{right:20px}
+:root{--ba11y-color:#1f6feb}
