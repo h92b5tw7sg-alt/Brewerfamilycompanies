@@ -173,3 +173,4 @@ header.header{z-index:100}
 .brand-row{background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.015) 45%),rgba(255,255,255,.025);box-shadow:inset 0 1px 0 rgba(255,255,255,.14);-webkit-backdrop-filter:blur(20px) saturate(140%);backdrop-filter:blur(20px) saturate(140%)}
 @media(max-width:900px){.faq-layout{grid-template-columns:1fr;gap:28px}.faq-intro{position:static}}
 @media(prefers-reduced-motion:reduce){.faq-icon::before,.faq-icon::after,.faq-item{transition:none}}
+.brand-plate img.brand-contain{width:100%;height:100%;object-fit:contain}
