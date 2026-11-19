@@ -174,3 +174,4 @@ header.header{z-index:100}
 @media(max-width:900px){.faq-layout{grid-template-columns:1fr;gap:28px}.faq-intro{position:static}}
 @media(prefers-reduced-motion:reduce){.faq-icon::before,.faq-icon::after,.faq-item{transition:none}}
 .brand-plate img.brand-contain{width:100%;height:100%;object-fit:contain}
+.haunt-logo{background:#000;max-width:400px}
