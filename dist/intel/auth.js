@@ -7,7 +7,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 const SUPABASE_URL = 'https://ligjdeagnirrnaoixpue.supabase.co';
 const SUPABASE_KEY = 'sb_publishable__brtUpVtwgA8BjSCxUEZTg_3WKqKLrl';
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, {
-  auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'pkce' }
+  auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'implicit' }
 });
 
 const TABLES = {
