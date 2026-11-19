@@ -1,0 +1,20 @@
+/* Policy pages */
+.legal-header{justify-content:space-between}
+.legal-back{font-size:14px;color:#ffb2b7;text-decoration:none;padding:10px 14px;border-radius:30px}
+.legal-back:hover{background:rgba(255,255,255,.08)}
+.legal-page{max-width:820px;padding:56px 0 80px}
+.legal-page h1{font-size:clamp(36px,5vw,56px);margin:10px 0 8px}
+.legal-meta{color:#aaa3b0;font-size:14px;margin-bottom:36px}
+.legal-page h2{font-size:21px;margin:34px 0 10px}
+.legal-page p,.legal-page li{color:#d2cbd4;line-height:1.75;font-size:17px}
+.legal-page ul,.legal-page ol{padding-left:22px}
+.legal-page a{color:#ffb2b7}
+.legal-contact{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12)}
+.legal-footer{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:28px 0 44px;border-top:1px solid rgba(255,255,255,.1);color:#aaa3b0;font-size:14px}
+.legal-footer nav{display:flex;gap:18px;flex-wrap:wrap}
+.legal-footer a{color:#d2cbd4;text-decoration:none}
+.legal-footer a:hover{color:#fff;text-decoration:underline}
+.site-policy-links{display:flex;gap:16px;flex-wrap:wrap;font-size:13px}
+.site-policy-links a{color:#c8c0cc;text-decoration:none}
+.site-policy-links a:hover{color:#fff;text-decoration:underline}
+.legal-page h2{letter-spacing:0;text-transform:none;font-weight:700}.legal-page h1{letter-spacing:-1px}
