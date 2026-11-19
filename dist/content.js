@@ -102,7 +102,9 @@
       const file = row.metadata?.file;
       if (!file) return [];
       const image = [...document.querySelectorAll('#memories img')].find(img => img.getAttribute('src') === 'photos/' + file);
-      return image ? [{image, url:safeUrl(row.url)}] : [];
+      // Keep the photo bundled with this site; only accept database URLs on the same host.
+      const url = safeUrl(row.url);
+      return image && new URL(url).host === location.host ? [{image, url}] : [];
     });
     document.querySelector('.story-grid').replaceChildren(...companyNodes);
     document.querySelector('#timeline .timeline').replaceChildren(timelineNodes);
