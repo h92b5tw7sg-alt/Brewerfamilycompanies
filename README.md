@@ -38,4 +38,4 @@ For a new change, run `npm run db:migration -- descriptive_name`, edit the gener
 
 Editors can be granted membership by a database administrator in `bfc_private.editors`, using the ID of an existing, verified Supabase Auth user. A separate editor interface is not included. Content can be maintained in the Supabase dashboard or by an authorized database administrator.
 
-Website hosting remains on Sites. Pushing GitHub source does not by itself deploy a new website version. The managed Sites workflow publishes the matching source and static artifact.
+Website hosting: GitHub Pages publishes `dist/` automatically on every push to `main` (`.github/workflows/deploy-pages.yml`). Custom domain: brewerfamilycompanies.com, set in Settings → Pages. Point GoDaddy DNS at GitHub Pages and leave the Google Workspace MX/TXT records untouched. The earlier Sites copy (brewer-family-companies.brett-brewer-9683.chatgpt.site) can be retired once the domain is live.
