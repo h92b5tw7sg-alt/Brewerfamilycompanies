@@ -116,3 +116,5 @@ body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;bac
 .brand-url{font-size:14px;color:#ffb2b7;text-decoration:none}
 .brand-url:hover{text-decoration:underline}
 @media(max-width:800px){.brand-row{grid-template-columns:1fr;gap:18px}.brands-heading{grid-template-columns:1fr;gap:16px}}
+.brand-plate img.brand-logo-wide{width:86%;height:auto;object-fit:contain}
+.plate-black{background:#000}
