@@ -191,3 +191,5 @@ header.header{z-index:100}
 .future-quote cite{display:block;margin-top:12px;font:normal 13px/1.4 system-ui,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#ff9ea4}
 @media(max-width:1000px){.future-grid{grid-template-columns:1fr}.future-heading{grid-template-columns:1fr;gap:16px}}
 @media(prefers-reduced-motion:reduce){.future-card{transition:none}.future-card:hover{transform:none}}
+.co-red{background:linear-gradient(145deg,#c8242b,#7d1218)}
+.co-wordmark{font:900 12px/1 Impact,"Arial Black",system-ui,sans-serif;letter-spacing:1px;color:#fff;text-transform:uppercase}
