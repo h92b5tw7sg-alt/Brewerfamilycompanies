@@ -27,3 +27,22 @@ html.bi-locked body{display:block!important}
 button[data-ask]:hover,button[data-ask]:focus-visible,button[type=submit]:hover,button[type=submit]:focus-visible,.primary:hover,.primary:focus-visible,.close:hover,.close:focus-visible{box-shadow:0 0 0 1px rgba(255,210,63,.6),0 0 22px rgba(255,210,63,.32)}
 .text-button:hover,.text-button:focus-visible,a:hover,a:focus-visible{color:var(--glow);text-shadow:0 0 14px rgba(255,210,63,.55)}
 @media(prefers-reduced-motion:reduce){.nav,button,.company,.record-card,a{transition:none}}
+/* Phone menu (hamburger + liquid-glass panel) */
+.bi-menu-toggle{display:none}
+@media(max-width:900px){
+ .sidebar{position:sticky;top:0;z-index:60;display:flex;flex-direction:row;overflow:visible;height:auto;width:100%;align-items:center;justify-content:space-between;padding:14px 18px;background:rgba(11,15,21,.78);-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid rgba(255,255,255,.08)}
+ .bi-menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.22);color:#fff;cursor:pointer}
+ .bi-menu-toggle:hover,.bi-menu-toggle:focus-visible{box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 0 0 1px rgba(255,210,63,.55),0 0 22px rgba(255,210,63,.28)}
+ .bi-burger{position:relative;width:20px;height:14px;display:inline-block}
+ .bi-burger i{position:absolute;left:0;width:100%;height:2px;border-radius:2px;background:currentColor;transition:transform .25s,opacity .2s,top .25s}
+ .bi-burger i:nth-child(1){top:0}.bi-burger i:nth-child(2){top:6px}.bi-burger i:nth-child(3){top:12px}
+ .menu-open .bi-burger i:nth-child(1){top:6px;transform:rotate(45deg)}
+ .menu-open .bi-burger i:nth-child(2){opacity:0}
+ .menu-open .bi-burger i:nth-child(3){top:6px;transform:rotate(-45deg)}
+ .sidebar nav#bi-main-nav{display:none}
+ .sidebar.menu-open nav#bi-main-nav{display:flex;flex-direction:column;flex-wrap:nowrap;gap:4px;position:absolute;top:calc(100% + 10px);left:12px;right:12px;margin:0;padding:10px;border-radius:22px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(160deg,rgba(77,178,255,.14),rgba(255,255,255,.03) 45%),#0e131b;-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 30px 80px rgba(0,0,0,.6);animation:biMenuIn .18s ease-out}
+ .sidebar.menu-open nav#bi-main-nav .nav{flex:none;width:100%;justify-content:flex-start;gap:14px;padding:15px 14px;margin:0;border-radius:14px;font-size:16px}
+ .sidebar.menu-open nav#bi-main-nav .nav span{display:inline-block;font-size:20px;width:24px}
+}
+@keyframes biMenuIn{from{opacity:0;transform:translateY(-6px) scale(.98)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.bi-burger i{transition:none}.sidebar.menu-open nav#bi-main-nav{animation:none}}
