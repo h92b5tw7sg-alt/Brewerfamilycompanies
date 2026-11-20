@@ -276,3 +276,8 @@ html.menu-open body{overflow:hidden}
 @media(max-width:420px){.menu-label{display:none}.menu-toggle{padding:11px}}
 @media(prefers-reduced-motion:reduce){.site-menu{animation:none}.burger i{transition:none}}
 .header-cta{background:#c41f1b}
+/* Remembered section: illustration + inline plaque */
+.plaque-illustration figcaption,.plaque-inline figcaption{margin-top:10px;font-size:13px;color:#aaa3b0}
+.plaque-illustration figcaption span{display:inline-block;margin-right:8px;padding:3px 9px;border-radius:20px;background:rgba(255,255,255,.08);color:#ffb2b7;font-size:11px;letter-spacing:.8px;text-transform:uppercase}
+.plaque-inline{margin:20px 0 18px;max-width:260px}
+.plaque-inline img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 12px 36px rgba(0,0,0,.4)}
